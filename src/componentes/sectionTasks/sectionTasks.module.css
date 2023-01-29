@@ -7,6 +7,6 @@
     display: flex;
     justify-content: space-between;
 }
-.divContainerTasks{
-    
+.containerEmpty{
+    padding: 4rem 0;
 }

@@ -1,11 +1,15 @@
+import { useState } from "react"
 import style from "./input.module.css"
 
 export function InputText(props){
     
+    const [newTaskText, setNewtaskText] = useState('')
+    
     function addTask(event){
 
         event.preventDefault()
-        props.addTask(event.target.firstChild.value)
+        props.addTask(newTaskText)
+        setNewtaskText("")
 
 
     }
@@ -13,8 +17,8 @@ export function InputText(props){
 
     return(
             <form action="" className={style.formAddTask} onSubmit={addTask}>
-                <input type="text" placeholder="Adicione uma nova tarefa"/>
-                <button>Criar</button>
+                <input type="text" onChange={(event) => setNewtaskText(event.target.value)} value={newTaskText} placeholder="Adicione uma nova tarefa"/>
+                <button disabled={newTaskText === ''}>Criar</button>
             </form>
     )
 

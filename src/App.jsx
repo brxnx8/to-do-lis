@@ -9,12 +9,19 @@ import { useState } from "react";
 function App() {
   
   const [tasks, setTasks] = useState([])
-  
+  const addTask = (valor) => 
+  {
+    if(!(tasks.includes(valor))){
+      setTasks([...tasks, valor])
+    }else{
+      alert("Esta task ja existe")
+    }
+  }
   return (
     <div className="App" >
       <Header />
       <main className="section-main">
-        <InputText addTask={(valor) => {setTasks([...tasks, valor])}}/>
+        <InputText addTask={addTask}/>
         <SectionTask tasks={tasks} tasksWithoutRemoveTask={tasks => setTasks(tasks)}/>
       </main>
     </div>
