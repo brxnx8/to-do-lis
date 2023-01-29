@@ -1,11 +1,11 @@
 import style from "./labelCounter.module.css"
 
-export function Label(){
+export function Label(props){
     
     return(
         <div className={style.containerLabel}>
-            <p>Tarefas Criadas</p>
-            <span>0</span>
+            <p>{props.text}</p>
+            <span>{props.CounterTasks}</span>
         </div>
     )
 
