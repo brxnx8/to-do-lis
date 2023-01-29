@@ -2,15 +2,17 @@ import "./style.css"
 
 import { Header } from "./componentes/header";
 import { InputText } from "./componentes/inputText";
+import { SectionTask } from "./componentes/sectionTasks";
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <section className="section-main">
+      <main className="section-main">
         <InputText />
-      </section>
+        <SectionTask/>
+      </main>
     </div>
   );
 }

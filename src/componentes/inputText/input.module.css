@@ -1,0 +1,29 @@
+.formAddTask{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.3rem;
+}
+.formAddTask > input{
+    width: 90%;
+    padding: 0.6rem;
+
+    background-color: rgb(184, 184, 184);
+    
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+}
+
+.formAddTask >  button{
+    width: 70px;
+    padding: 0.6rem;
+
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+
+    cursor: pointer;
+}

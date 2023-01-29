@@ -3,12 +3,10 @@ import style from "./input.module.css"
 export function InputText(){
     
     return(
-        <div>
-            <form action="">
+            <form action="" className={style.formAddTask}>
                 <input type="text" />
-                <button>criar</button>
+                <button>Criar</button>
             </form>
-        </div>
     )
 
 }

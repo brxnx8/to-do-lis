@@ -1,11 +1,11 @@
-import style from "./labelCount.module.css"
+import style from "./labelCounter.module.css"
 
 export function Label(){
     
     return(
-        <div>
-            <p></p>
-            <span></span>
+        <div className={style.containerLabel}>
+            <p>Tarefas Criadas</p>
+            <span>0</span>
         </div>
     )
 
