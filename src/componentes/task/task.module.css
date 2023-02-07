@@ -7,7 +7,7 @@
     
     margin-bottom: 0.5rem;
     
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(107, 107, 107);
 
     border-radius: 4px;
 }
@@ -34,5 +34,7 @@
 
     line-height: 0.9;
     align-self: flex-start;
+
+    cursor: pointer;
 
 }

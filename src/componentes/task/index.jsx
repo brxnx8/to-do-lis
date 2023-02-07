@@ -6,8 +6,12 @@ export function Task(props){
         props.isCompleted(event.target.checked)
         if(event.target.checked){
             event.target.nextSibling.style.textDecoration = "line-through"
+            event.target.nextSibling.style.color = "#2bbdc875"
+            event.target.parentNode.style.backgroundColor = "rgb(56, 56, 56)"
         }else{
             event.target.nextSibling.style.textDecoration = ""
+            event.target.nextSibling.style.color = ""
+            event.target.parentNode.style.backgroundColor = ""
         }
     }
 
